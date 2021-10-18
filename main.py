@@ -36,6 +36,7 @@ def findColor(circles1,img_rgb):
     if circles1 is not None:
         for i in circles1:
             color=tuple(img_rgb[i[1],i[0],:])
+            color=(color[2],color[0],color[1])
             try:
                 name=webcolors.rgb_to_name(color)
                 l.append(name)
