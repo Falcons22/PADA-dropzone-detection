@@ -11,5 +11,5 @@ python main.py
 
 ### Preview
 <p align="center">
-  <img src="demo.jpeg">
+  <img src="demo.png">
  </p>
