@@ -25,5 +25,9 @@ In this method, the limits must be adjusted to find the required color and then 
  </p>
 <p align="center">
   <img src="demo_masking.png">
-  Circle detection with color masking
+  Circle detection with color masking (blue)
+ </p>
+ <p align="center">
+  <img src="demo_masking_red.png">
+  Circle detection with color masking (red)
  </p>
