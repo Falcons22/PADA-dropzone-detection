@@ -42,8 +42,8 @@ while(1):
     new_frame_time = time.time()
     fps = 1/(new_frame_time-prev_frame_time)
     prev_frame_time = new_frame_time
-    blue = np.uint8([[[255,0, 0]]]) #here insert the bgr values which you want to convert to hsv
-    hsvBlue = cv2.cvtColor(blue, cv2.COLOR_BGR2HSV)
+    #     blue = np.uint8([[[255,0, 0]]]) 
+    #     hsvBlue = cv2.cvtColor(blue, cv2.COLOR_BGR2HSV)
     #print(hsvBlue)
     # lowerLimit = hsvBlue[0][0][0] - 10, 100, 100
     # lowerLimit = np.array(lowerLimit)
@@ -64,9 +64,6 @@ while(1):
     # upper_blue = np.array([180, 255, 255])
     # # preparing the mask to overlay
     mask = cv2.inRange(hsv, LowerRegion, upperRegion)
-     
-    # The black region in the mask has the value of 0,
-    # so when multiplied with original image removes all non-blue regions
     
     result = cv2.bitwise_and(frame,frame, mask = mask)
     img_blur=cv2.GaussianBlur(result,(3,3),0)
