@@ -23,7 +23,8 @@ def findCircles(img,img_blur):
 cap = cv2.VideoCapture("video.mp4")
 while True:
     ret, frame = cap.read()
-
+    if ret == False:
+        break
     hsv_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
     # Red color
 
